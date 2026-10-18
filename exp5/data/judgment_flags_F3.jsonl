@@ -1,0 +1,301 @@
+{"meta": {"flagger": "F3", "sha": "ec7254248c22f5aa8683376704f09ee036aebb8472cfc19d87fafd1f2ad21cab", "adapter": null, "model": "claude-sonnet-5-5", "date": "2026-10-18"}}
+{"id": "a1-002", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-004", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-005", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-006", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-007", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-008", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-010", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-011", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-015", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-021", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-022", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-024", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-025", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-027", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-028", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-030", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-031", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-032", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-033", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-034", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-035", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-037", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-038", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-039", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-040", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-041", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-042", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-043", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-044", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-046", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-047", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-048", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-049", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-050", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-051", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-052", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-054", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-055", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-057", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-058", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-060", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-061", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-063", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-064", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-066", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-067", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-069", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-071", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-073", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-074", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-076", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-077", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-079", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-080", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-082", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-083", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-085", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-086", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-087", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-088", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-089", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-091", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-092", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-093", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-094", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-095", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-097", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-098", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-100", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-101", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-103", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-104", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-106", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-107", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-111", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-112", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-113", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-115", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-116", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-117", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-118", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-120", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-121", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-123", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-124", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-126", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-131", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-132", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-134", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-135", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-137", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-138", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-140", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-141", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-147", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-151", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-152", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-153", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-154", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-155", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-156", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-157", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-159", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-162", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-163", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-164", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-166", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-167", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-168", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-170", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-171", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-172", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-173", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-174", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-175", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-176", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-177", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-178", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-181", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-185", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-187", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-188", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-189", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-190", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-191", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-192", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "a1-197", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-198", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-199", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-200", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-201", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-204", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-205", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-206", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-209", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-210", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-211", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-212", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-213", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-214", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "a1-215", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "a1-216", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-217", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-218", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "a1-220", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-221", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-222", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-223", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-224", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "a1-225", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-001", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-002", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-003", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-004", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-005", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-006", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-007", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-008", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-009", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-010", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-011", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-012", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-013", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-014", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-015", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-016", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-017", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-018", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-019", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-020", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-021", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-022", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-023", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-024", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-025", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-026", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-027", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-028", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-029", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-030", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-031", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-032", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-033", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-034", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-035", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-036", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-037", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-038", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-039", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-040", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-041", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-042", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-043", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-044", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-045", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-046", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-047", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-048", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-049", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-050", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-051", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-052", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-053", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-054", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-055", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-056", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-057", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-058", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-059", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-060", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-061", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-062", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-063", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-064", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-065", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-066", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-067", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-068", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-069", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-070", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-071", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-072", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-073", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-074", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-075", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-076", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-077", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-078", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-079", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-080", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-081", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-082", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-083", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-084", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-085", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-086", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-087", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-088", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-089", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-090", "output": "FLAG NO_STRUCTURING", "flagged": true, "concept": "NO_STRUCTURING", "valid": true}
+{"id": "jc-091", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-092", "output": "FLAG NO_CONFLICT_OF_INTEREST", "flagged": true, "concept": "NO_CONFLICT_OF_INTEREST", "valid": true}
+{"id": "jc-093", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-094", "output": "FLAG NO_SECRECY_OR_PRESSURE", "flagged": true, "concept": "NO_SECRECY_OR_PRESSURE", "valid": true}
+{"id": "jc-095", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-096", "output": "FLAG BUSINESS_USE_ONLY", "flagged": true, "concept": "BUSINESS_USE_ONLY", "valid": true}
+{"id": "jc-097", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-098", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-099", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-100", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-101", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-102", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-103", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-104", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-105", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-106", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-107", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-108", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-109", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-110", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-111", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-112", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-113", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-114", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-115", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-116", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-117", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-118", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-119", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-120", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-121", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-122", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-123", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-124", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-125", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-126", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-127", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-128", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-129", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-130", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-131", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-132", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-133", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-134", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-135", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-136", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-137", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-138", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-139", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-140", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-141", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-142", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-143", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-144", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-145", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-146", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-147", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-148", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-149", "output": "OK", "flagged": false, "concept": null, "valid": true}
+{"id": "jc-150", "output": "OK", "flagged": false, "concept": null, "valid": true}
