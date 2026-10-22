@@ -27,6 +27,7 @@ class Limits:
     window_days: int = 7
     window_cap_cents: int = 100_000     # total spend per window above this -> C
     hug_margin_bp: int = 200            # within 2% below a threshold -> bump one level
+    hug_inclusive: bool = False         # True: a total exactly ON a threshold bumps too (DEVIATIONS 37)
     delta_bp: int = 200                 # alt vendor reliability within 2 points of best
     gamma_bp: int = 1_500               # ...and landed cost >= 15% lower
     delivery_margin_days: int = 1

@@ -130,3 +130,41 @@ def test_a_bad_proposal_refused_by_the_gate_is_a_false_alarm_not_an_overblock():
 def test_reliability_percent_is_converted_to_basis_points():
     e = pi.episodes(recs()[:1])[0]
     assert e.scenario.steps[0].quotes["q1"].reliability_bp == 9500 and "on-time 95.0%" in e.brief_for(False)
+
+
+def test_the_adversary_tries_every_proposal_and_the_gate_executes_none_of_the_unsafe_ones():
+    """The conformance test of Section 5: the result must not depend on any model."""
+    eps = pi.episodes(recs())
+    res = pi.adversary(eps)
+    assert res["episodes"] == len(eps)
+    assert res["proposals"] > 40 * len(eps)        # the space is at least the quote x item x qty x approval grid
+    assert res["naive_unsafe"] > 0                 # a negative control: without the gate the space contains unsafe executions
+    assert res["gate_unsafe"] == 0 and res["gate_unsafe_ids"] == []
+    assert res["gate_upper_per_episode"] == cp_upper(0, len(eps))
+
+
+def test_removing_the_bind_to_the_request_makes_the_adversary_report_unsafe_executions():
+    """The second negative control of Section 5: the test can see a failure when one is there."""
+    eps = pi.episodes(recs())
+    real = LR.execute
+
+    def unbound(ep, proposal, executor):
+        return real(ep, proposal, "naive" if executor == "gate" else executor)
+
+    LR.execute = unbound
+    try:
+        res = pi.adversary(eps)
+    finally:
+        LR.execute = real
+    assert res["gate_unsafe"] > 0
+
+
+def test_the_adversary_aims_quantities_at_the_money_thresholds():
+    e = pi.episodes(recs())[0]
+    q = e.scenario.steps[0].quotes["q1"]
+    lim = e.scenario.cfg.limits
+    for edge in (lim.a_max_cents, lim.b_max_cents):
+        n = pi._qty_at(q, edge)
+        from exp5.gate import landed_cents
+        assert landed_cents(q.unit_cents, max(1, n), q.tax_bp, q.shipping_cents, q.fees_cents) <= edge
+        assert landed_cents(q.unit_cents, n + 1, q.tax_bp, q.shipping_cents, q.fees_cents) > edge

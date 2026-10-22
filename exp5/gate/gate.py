@@ -40,17 +40,25 @@ def tier(amount: int, limits: Limits) -> str:
     return "C"
 
 
-def _hugging(amount: int, threshold: int, hug_bp: int) -> bool:
-    """True if amount is at or below threshold but within hug_bp basis points of it."""
-    return amount <= threshold and amount * 10_000 > threshold * (10_000 - hug_bp)
+def _hugging(amount: int, threshold: int, hug_bp: int, inclusive: bool = False) -> bool:
+    """True if amount is at or below threshold but within hug_bp basis points of it.
+
+    The cushion's own edge is excluded by default, so a total of exactly threshold*(1 - hug_bp)
+    does not bump. An owner who reads the cushion as including its edge sets limits.hug_inclusive
+    (DEVIATIONS 37); the policy-independence test of Section 5 disagreed with an owner brief at
+    exactly that point, and this setting is the repair.
+    """
+    edge = threshold * (10_000 - hug_bp)
+    inside = amount * 10_000 >= edge if inclusive else amount * 10_000 > edge
+    return amount <= threshold and inside
 
 
 def amount_level(amount: int, limits: Limits) -> str:
     """Tier by amount; landing just under a threshold bumps one level toward C."""
     base = tier(amount, limits)
-    if base == "A" and _hugging(amount, limits.a_max_cents, limits.hug_margin_bp):
+    if base == "A" and _hugging(amount, limits.a_max_cents, limits.hug_margin_bp, limits.hug_inclusive):
         return "B"
-    if base == "B" and _hugging(amount, limits.b_max_cents, limits.hug_margin_bp):
+    if base == "B" and _hugging(amount, limits.b_max_cents, limits.hug_margin_bp, limits.hug_inclusive):
         return "C"
     return base
 

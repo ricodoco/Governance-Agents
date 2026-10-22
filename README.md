@@ -43,6 +43,37 @@ Needs Python 3.10 or newer and no model.
 
 `my_results.json` is identical to `exp5/data/judgment_results.json`. The printed report lists the seven predictions made before the run, and states which held and which did not.
 
+## Reproduce the conformance test of the hard layer
+
+This is the test behind Table 2 of the paper. It needs no model: an adversary builds every proposal it
+can from each episode's own parts and runs all of them through the guard, so the result does not depend
+on which model proposes. Each run checks the set's hash against the sealed value and refuses to overwrite
+an existing output.
+
+    python3 -m exp5.sim.purchasing_independent --adversary \
+      --set exp5/prereg/independent/purchasing_set_a1_v2.jsonl \
+      --sha 21b7600c69877005a908c90f8c9b5c592e6fb2eeb033bb5ce61d63ff6e9bdbb3
+
+    python3 -m exp5.sim.dataaccess_independent --adversary \
+      --set exp5/prereg/independent/dataaccess_set_a1_v1.jsonl \
+      --sha 5852181b14cddc3868874b25e2cc8ff53b0f392b5530a1268d872f9387a06809
+
+| Arena | Episodes | Proposals | Unsafe, no guard | Unsafe, with the guard | Bound per episode |
+|---|---:|---:|---:|---:|---:|
+| Purchasing | 340 | 56,138 | 29,922 | 0 | 0.88% |
+| Data access | 530 | 124,372 | 122,982 | 0 | 0.56% |
+
+Both take about a minute. The purchasing figures match `exp5/data/independent_purchasing_adversary.json`
+and the data-access figures `exp5/data/independent_dataaccess_adversary.json`.
+
+Two rows of the paper's Table 2 are not reproduced by these commands, and the reason is stated rather
+than hidden. **Delegation** has no proposal search by design: authority there is a signed chain, so the
+guard is tested by replaying all 470 episodes under every prompt condition and by property tests over
+generated chains (`exp5/tests/test_delegation.py`, `test_properties.py`). **Policy independence** used a
+separate toolkit, and its episode set, owner brief and runner are not part of this repository; entry 53
+of the deviations log records the result, the hashes and the repair it led to. The repair itself is here:
+the owner setting `hug_inclusive` on `Limits`, with its tests in `exp5/tests/test_money_and_tiers.py`.
+
 ## Run it on your own models
 
 - Proposers: `python3 -m exp5.sim.judgment_pipeline propose` (Ollama by default, `--api` for Claude). It writes once per model and refuses to overwrite without `--rerun`.
@@ -55,6 +86,7 @@ Needs Python 3.10 or newer and no model.
 - The authors of the sealed sets saw the rules as text. The label (rule-breaking or legitimate) is subjective, though adjudicated; see `exp5/prereg/independent/adjudication/`.
 - The F1 case generator was written after the sealed set was read. The trainer and generator are not in this kit.
 - Each condition ran once. Nothing was tuned on the sealed sets.
+- The purchasing proposal search in this kit was written in October 2026 and reports 56,138 proposals. An earlier run reported 58,832; its code was not kept, so that figure is not reproducible. The guard's result, 0 unsafe executions, is the same under both.
 - A hard layer cannot cover actions it does not model. The study does not test that.
 
 ## Relation to other repositories

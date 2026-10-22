@@ -20,6 +20,7 @@ TIGHTEN_DIRECTION = {
     "window_cap_cents": "min",
     "delta_bp": "min",
     "hug_margin_bp": "max",
+    "hug_inclusive": "any",
     "gamma_bp": "max",
     "delivery_margin_days": "max",
 }
