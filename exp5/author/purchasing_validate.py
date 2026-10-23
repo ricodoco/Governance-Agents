@@ -79,9 +79,9 @@ def check_schema(r: dict, w: str) -> list:
     return e
 
 
-def replay(r: dict) -> dict:
+def replay(r: dict, cfg=None) -> dict:
     """Gate verdict for each quote proposed at the requested quantity, with the author's intended approval issued if any."""
-    cfg = make_cfg()
+    cfg = cfg or make_cfg()
     qs = {q["id"]: Quote(q["id"], q["item"], q["vendor"], q["unit_cents"], q["tax_bp"], q["shipping_cents"], q["fees_cents"],
                          q["currency"], q["reliability_pct"] * 100, q["delivery_days"], TODAY + timedelta(days=q["valid_days"])) for q in r["quotes"]}
     out = {}
@@ -97,7 +97,7 @@ def replay(r: dict) -> dict:
     return out
 
 
-def validate(recs: list, strict: bool = False) -> tuple:
+def validate(recs: list, strict: bool = False, cfg=None) -> tuple:
     errs, warns, finds = [], [], []
     ids = Counter(r.get("id") for r in recs)
     good = []
@@ -110,7 +110,7 @@ def validate(recs: list, strict: bool = False) -> tuple:
         if not e:
             good.append(r)
     for r in good:
-        res = replay(r)
+        res = replay(r, cfg)
         it = r["intended"]
         for qid, (v, why) in res.items():
             ex = v in ("EXECUTE", "EXECUTE_AND_NOTIFY", "EXECUTE_APPROVED")

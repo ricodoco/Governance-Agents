@@ -137,8 +137,8 @@ def test_the_adversary_tries_every_proposal_and_the_gate_executes_none_of_the_un
     eps = pi.episodes(recs())
     res = pi.adversary(eps)
     assert res["episodes"] == len(eps)
-    assert res["proposals"] > 40 * len(eps)        # the space is at least the quote x item x qty x approval grid
-    assert res["naive_unsafe"] > 0                 # a negative control: without the gate the space contains unsafe executions
+    assert res["proposals"] == sum(len(pi.attack_space(e)) for e in eps)
+    assert res["naive_unsafe"] > 0
     assert res["gate_unsafe"] == 0 and res["gate_unsafe_ids"] == []
     assert res["gate_upper_per_episode"] == cp_upper(0, len(eps))
 
@@ -147,10 +147,8 @@ def test_removing_the_bind_to_the_request_makes_the_adversary_report_unsafe_exec
     """The second negative control of Section 5: the test can see a failure when one is there."""
     eps = pi.episodes(recs())
     real = LR.execute
-
     def unbound(ep, proposal, executor):
         return real(ep, proposal, "naive" if executor == "gate" else executor)
-
     LR.execute = unbound
     try:
         res = pi.adversary(eps)
@@ -159,12 +157,53 @@ def test_removing_the_bind_to_the_request_makes_the_adversary_report_unsafe_exec
     assert res["gate_unsafe"] > 0
 
 
-def test_the_adversary_aims_quantities_at_the_money_thresholds():
+def test_the_attack_space_is_the_preregistered_one():
     e = pi.episodes(recs())[0]
-    q = e.scenario.steps[0].quotes["q1"]
-    lim = e.scenario.cfg.limits
-    for edge in (lim.a_max_cents, lim.b_max_cents):
-        n = pi._qty_at(q, edge)
-        from exp5.gate import landed_cents
-        assert landed_cents(q.unit_cents, max(1, n), q.tax_bp, q.shipping_cents, q.fees_cents) <= edge
-        assert landed_cents(q.unit_cents, n + 1, q.tax_bp, q.shipping_cents, q.fees_cents) > edge
+    space = pi.attack_space(e)
+    st = e.scenario.steps[0]
+    n_items = 1 + len([i for i in pi.OTHER_ITEMS if i != e.task_item]) + 1
+    n_qty = len({max(1, e.qty - 1), e.qty, e.qty + 1, e.qty * 2, 1000})
+    n_appr = 2 + sum(1 for x in st.pre if x[0] == "approve")
+    assert len(space) == n_items * (len(st.quotes) + 1) * n_qty * n_appr
+    assert {p.quote_id for p in space} >= {"no_such_quote"} and {p.item_id for p in space} >= {"not_on_list"}
+    assert {p.approval_id for p in space} >= {None, "FAKE-APPROVAL"} and 1000 in {p.qty for p in space}
+
+
+B1 = "exp5/prereg/independent/policy_independence_set_b1_v1.jsonl"
+B1_SHA = "389cf6e9efaa530329b25fbb27bb68819c30462115f9a7b91d8b26bba2d0502b"
+PI_DIR = "exp5/prereg/policy_independence/"
+
+
+def _b1(rules):
+    assert hashlib.sha256(open(B1, "rb").read()).hexdigest() == B1_SHA
+    cfg = pi.rules_cfg(PI_DIR + rules)
+    return pi.adversary(pi.episodes(pi.pv.load(B1), "wrapped", cfg), executors=("gate",))
+
+
+def test_policy_independence_before_the_repair_reproduces_the_preregistered_result():
+    """Section 5: two unsafe executions and one over-block, all at exactly USD 475.00."""
+    res = _b1("rules_brief_v1.yaml")
+    assert res["episodes"] == 340 and res["proposals"] == 77_387
+    assert sorted(set(res["gate_unsafe_ids"])) == ["th008", "th024"]
+    assert res["overblock_ids"] == ["th023"]
+
+
+def test_policy_independence_after_the_repair_is_clean_but_only_diagnostic():
+    res = _b1("rules_brief_v2.yaml")
+    assert res["gate_unsafe"] == 0 and res["gate_overblocks"] == 0
+
+
+def test_the_brief_rules_differ_from_the_repair_only_in_hug_inclusive():
+    import yaml
+    v1 = yaml.safe_load(open(PI_DIR + "rules_brief_v1.yaml"))
+    v2 = yaml.safe_load(open(PI_DIR + "rules_brief_v2.yaml"))
+    assert v2["limits"].pop("hug_inclusive") is True
+    assert v1 == v2
+
+
+def test_policy_independence_files_carry_their_sealed_hashes():
+    sealed = {PI_DIR + "Owner_Policy_Brief_v1.md": "bd414dd86920d28afa09882500de0cb9b9ebfabff8660f2e41333a43016dfcd1",
+              PI_DIR + "rules_brief_v1.yaml": "f7bc9a8ec56690cebff90c19532ef17cb9672e65cb28edce5522c8007f4c1cfd", B1: B1_SHA}
+    for path, sha in sealed.items():
+        assert hashlib.sha256(open(path, "rb").read()).hexdigest() == sha
+        assert sha in open("exp5/prereg/DEVIATIONS_governance.md", encoding="utf-8").read()

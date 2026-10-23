@@ -1,0 +1,8 @@
+budget_ceiling_cents: 200000
+limits:
+  a_max_cents: 10000
+  b_max_cents: 50000
+  delivery_margin_days: 2
+  delta_bp: 200
+  gamma_bp: 1000
+  hug_margin_bp: 500
