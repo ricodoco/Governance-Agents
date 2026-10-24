@@ -95,6 +95,15 @@ in the same folder.
 by replaying all 470 episodes under every prompt condition and by property tests over generated chains
 (`exp5/tests/test_delegation.py`, `test_properties.py`).
 
+## Author prompts
+
+Every sealed set was written by an outside author from a prompt in `exp5/author/`: purchasing
+(`Author_Prompt_Purchasing_v3.md` and `ChatGPT_Author_Prompt_Purchasing_v1.md`), delegation
+(`Author_Prompt_Delegation_v1.md`), data access (`Author_Prompt_DataAccess_v1.md`), the judgment rules
+(`Author_Prompt_Judgment_v1.md`) and policy independence (`Author_Prompt_Purchasing_v4_Independent_Ready.md`).
+Deviations entry 57 says which prompt each author received and which hashes were recorded before use.
+The models, versions and settings of every run are named in the deviations log.
+
 ## Run it on your own models
 
 - Proposers: `python3 -m exp5.sim.judgment_pipeline propose` (Ollama by default, `--api` for Claude). It writes once per model and refuses to overwrite without `--rerun`.
